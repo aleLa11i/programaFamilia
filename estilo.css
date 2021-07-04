@@ -1,0 +1,219 @@
+*{
+    font-family: 'Play', sans-serif;
+    
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+h3{
+    font-size: 130%;
+}
+
+.boton-atras{
+    
+    visibility: hidden;
+    color: white;
+    border: 2px solid black;
+    width: 150px;
+    height: 20px;
+    margin: 20px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    background-color: rgb(39, 160, 136);
+    border-radius: 10px ;
+    
+}
+
+.boton-atras:hover {
+    transform: scale(1.05);
+    
+    
+} 
+
+.boton-atras:hover::after{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    background: #00b09b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+.titulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+}
+
+
+.conteiner2021{
+    
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    
+}  
+
+
+
+
+
+.item-div {
+    position: relative;
+    padding: 20px;
+    width: 250px;
+    height: 370px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 3px solid #000 ;
+    box-shadow: none;
+    background-color: rgb(39, 160, 136);
+    
+    transition-property: transform;
+    transition-duration: 0.5s;
+}
+
+
+.texto-eventos{
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+
+}
+ .item-div:hover {
+    transform: scale(1.05);
+    
+} 
+
+.item-div:hover::after{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    background: #00b09b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} 
+.item-div:focus {
+    transform: scale(1.05);
+    
+} 
+
+.item-div:focus::after{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    background: #00b09b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+} 
+
+
+.contendor-img{
+    
+    
+    border: 2px solid black;
+    padding: 10px; 
+    
+    
+}
+
+.iconoImg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid black;
+    left: 15%;
+}
+
+.conteiner-galeria{ 
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.conteiner-galeria div{
+    width: 20%;
+    margin: 5px;
+    border-radius: 10px;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    
+}
+.conteiner-galeria img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.hover:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 7px 1px #555;
+    
+}
+
+.divGrande{
+    position:fixed; 
+    width: 100% !important;
+    height: 100%; 
+    z-index: 2; 
+    display: flex;
+    justify-content: center;
+    top: 5vh ;
+}
+
+.imagenGrande {
+    width: 75% !important; 
+    height: 90% !important;
+    object-fit: contain !important; 
+}
+
+.trabarScroll {
+    overflow: hidden;
+}
+
+.blur{
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 300%; 
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(243, 243, 243, 0.2);
+    z-index: 1;
+}
+.blurEfecto{
+    visibility: visible;
+}
+
+
