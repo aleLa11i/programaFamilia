@@ -57,6 +57,14 @@ botonAtras.addEventListener("click",()=>{ botonAtras1()})
 
 
 
+// barraCreacionEventos.addEventListener("click", function() {
+//     barraCreacionEventos.classList.toggle("expandirBarra"); 
+// })
+
+
+
+
+
 function borrarFoto(div1){                              //Esta funcion borra aquellas fotos de las galerias que no esten o que den error
     console.log(div1)
     contenedorGaleria.removeChild(div1)
