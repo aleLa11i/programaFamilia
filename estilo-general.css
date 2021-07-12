@@ -1,0 +1,69 @@
+*{
+    font-family: 'Play', sans-serif;
+    
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+h3{
+    font-size: 130%;
+}
+
+.boton-atras{
+    
+    visibility: hidden;
+    color: white;
+    border: 2px solid black;
+    width: 150px;
+    height: 20px;
+    margin: 20px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    background-color: rgb(39, 160, 136);
+    border-radius: 10px ;
+    
+}
+
+.boton-atras:hover {
+    transform: scale(1.05);
+    
+    
+} 
+
+.boton-atras:hover::after{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' ';
+    background: #00b09b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+.titulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 250%;
+}
+
+
+
+
+
+
+
